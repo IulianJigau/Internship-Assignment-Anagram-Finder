@@ -4,17 +4,17 @@ This is a technical task submitted for the Global Database internship applicatio
 
 # How to Run This Project
 
-This project provides two methods for executing the **Anagram Finder** application:
+There are two ways to run the Anagram Finder, depending on whether you prefer to use the precompiled version or the raw source code.
 
-## Option 1: Running the Precompiled JAR (Recommended)
+## Option 1: Running the Precompiled JAR
 
-1. Download the compiled executable:  
-   `dist/Anagram-Finder.jar`
+1. Download the Anagram-Finder.jar file and the words.txt file from the Releases section of this repository.
+   (important: the JAR must be in the same location as words.txt)
 
-2. Execute the JAR file directly:  
-   Ensure that a valid Java Runtime Environment (JRE) is installed on your system.
+3. Execute the JAR file directly:  
+   Ensure that a valid Java Runtime Environment (JRE) is installed on your system and souble-click the Anagram-Finder.jar file.
 
-3. Alternatively, execute the JAR file via terminal:
+4. Alternatively, execute the JAR file via terminal:
 
    ```bash
    java -jar Anagram-Finder.jar
@@ -58,7 +58,7 @@ This project provides two methods for executing the **Anagram Finder** applicati
 
 ## Additional Information
 
-- Both the `src/` and `dist/` directories contain a `words.txt` file.
+- Both the `src/` directoriy and the release contain the `words.txt` file.
 - This file includes a sample dataset of 10,000 words, each consisting of 5 to 15 characters and limited to the first 16 letters of the English alphabet. The file is provided for testing purposes.
 - You may replace or modify the `words.txt` file to analyze custom word lists and generate corresponding anagram groups.
 
