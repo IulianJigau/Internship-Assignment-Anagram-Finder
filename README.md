@@ -12,7 +12,7 @@ There are two ways to run the Anagram Finder, depending on whether you prefer to
    (important: the JAR must be in the same location as words.txt)
 
 3. Execute the JAR file directly:  
-   Ensure that a valid Java Runtime Environment (JRE) is installed on your system and souble-click the Anagram-Finder.jar file.
+   Ensure that a valid Java Runtime Environment (JRE) is installed on your system and double-click the Anagram-Finder.jar file.
 
 4. Alternatively, execute the JAR file via terminal:
 
@@ -57,6 +57,8 @@ There are two ways to run the Anagram Finder, depending on whether you prefer to
 ---
 
 ## Additional Information
+
+- The output anagram groups will be saved in a file named anagram_groups.txt.”
 
 - Both the `src/` directoriy and the release contain the `words.txt` file.
 - This file includes a sample dataset of 10,000 words, each consisting of 5 to 15 characters and limited to the first 16 letters of the English alphabet. The file is provided for testing purposes.
