@@ -12,9 +12,6 @@ public class AnagramGrouper {
             String word;
             while ((word = reader.readLine()) != null) {
                 word = word.trim();
-                if (word.isEmpty()) {
-                    continue;
-                }
 
                 int len = word.length();
                 BufferedWriter writer = writers.computeIfAbsent(len, l -> {
