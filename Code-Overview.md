@@ -14,7 +14,6 @@ Reduces memory usage by dividing the input file into multiple smaller files, eac
 **How it works:**
 - Reads words from the input file.
 - Writes each word to a file named `len_X.txt`, where **X** is the word’s length.
-- Skips empty lines.
 
 This prevents the main memory structure (`HashMap`) from growing uncontrollably when dealing with very large datasets.
 
