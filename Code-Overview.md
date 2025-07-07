@@ -1,6 +1,6 @@
 # Code Overview
 
-This project implements a Java program designed to efficiently identify and group anagrams from a given input word list. The solution focuses on **scalability**, **memory management**, and **performance optimization**.
+This is a brief explanation of the main components of the program and how they work together to process the input, group anagrams, and generate the output.
 
 ---
 
