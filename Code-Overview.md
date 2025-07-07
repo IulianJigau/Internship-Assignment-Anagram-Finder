@@ -15,7 +15,7 @@ Reduces memory usage by dividing the input file into multiple smaller files, eac
 - Reads words from the input file.
 - Writes each word to a file named `len_X.txt`, where **X** is the word’s length.
 
-This prevents the main memory structure (`HashMap`) from growing uncontrollably when dealing with very large datasets.
+This is meant to reduce the main memory structure (`HashMap`) in size in order to mitigate the memory growth in large datasets.
 
 ---
 
@@ -49,7 +49,7 @@ Reads a file and groups words into anagrams using a `HashMap` where:
 - **Key:** Sorted version of the word.
 - **Value:** List of original words matching that key.
 
-The `initialCapacity` of the map is set based on the total word count to improve efficiency and reduce unnecessary resizing.
+The `initialCapacity` of the map is set based on the total word count.
 
 ---
 
