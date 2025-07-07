@@ -169,13 +169,11 @@ Since the number of words is already counted during preprocessing, this informat
 
 ### Key Adjustments
 
-- The initial capacity of the `HashMap` is set based on the total number of words, assuming that roughly **25%** of the words will form part of an anagram group.
-- This estimate helps avoid costly internal resizing operations.
-- A bucket-to-entries ratio of approximately **4:3** is maintained to balance **memory usage** and **lookup performance**.
+The initial capacity of the `HashMap` is set based on the total number of words. Assuming that roughly **25%** of the words will form part of an anagram group this change would set the bucket-to-entries ratio to approximately **4:3** which is recommended to maintain the balance between **memory usage** and **lookup performance**. This estimate helps avoid costly internal resizing operations.
 
 ### Observed Impact
 
-This fine-tuning led to a measurable improvement in both **speed** and **memory efficiency**, surpassing the earlier implementation that did not use word counting for pre-sizing the map.
+This fine-tuning led to a measurable improvement in both **speed** and **memory efficiency**, surpassing the earlier implementation that did not do any word counting.
 
 ## Future Scalability Considerations
 
