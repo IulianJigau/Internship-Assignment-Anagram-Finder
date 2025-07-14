@@ -12,12 +12,10 @@ The goal of this project was to develop a Java program that identifies and group
 
 ## Initial Considerations
 
-Given the potentially large number of words in the input file, a naive solution—such as comparing each word with every other word—was immediately ruled out due to its unacceptable time complexity of **O(n²)**. Similarly, solutions involving sorting each word individually would result in a minimum complexity of **O(n × k log k)**, where:
+Given the potentially large number of words in the input file, a naive solution such as sorting and comparing each word with every other word was immediately ruled out due to its unacceptable time complexity of **O(n² × k)**, where:
 
 - **n** = number of words
 - **k** = average length of each word
-
-Such an approach would not scale well for large datasets.
 
 ---
 
@@ -27,8 +25,6 @@ To achieve the desired performance, a **hashing-based approach** was selected. H
 
 - **Average case constant-time lookups:** O(1)
 - **Efficient grouping of equivalent values** (in this case, anagrams)
-
----
 
 <details>
 <summary><strong>What is Hashing?</strong></summary>
